@@ -67,7 +67,7 @@ export default class App extends Component {
               <button className="btn btn-outline-primary" onClick={this.handleK}><Link to="/people">People</Link></button>
             
           </div>
-          <div className="col"><button className="btn btn-outline-primary" onClick={this.handleK}><Link to="/">Corona</Link></button></div>
+          <div className="col"><button className="btn btn-outline-primary" onClick={this.handleK}><Link to="/">Corona Virus</Link></button></div>
         </nav>
 
         
@@ -82,7 +82,7 @@ export default class App extends Component {
     </Router>
      {
        this.state.k? <div className={styles.container}>
-      <img src={img} alt="covid19" className={styles.image}></img>
+      <img src={img} alt="covid19" className={styles.image}/>
       {console.log(Object.keys(this.state.data).length === 0 && this.state.data.constructor === Object)}
       {Object.keys(this.state.data).length === 0 && this.state.data.constructor === Object?<Spinner />:<Cards data={this.state.data}/>}
      {Object.keys(this.state.data).length === 0 && this.state.data.constructor === Object?<Spinner />:<CountryPicker handleCountryChange={this.handleCountryChange}/>} 
